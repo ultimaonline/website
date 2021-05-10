@@ -1,5 +1,7 @@
 // ultimaonline.dev
 
-import React, { Fragment } from 'react';
+import Poster from './poster';
 
-export default () => <Fragment />;
+const Index = () => <Poster />;
+
+export default Index;

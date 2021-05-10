@@ -1,0 +1,21 @@
+/* ultimaonline.dev */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  cursor: url('/cursors/hand.png'), auto;
+}
+
+body {
+  background-image: url('/img/poster.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  cursor: url('/cursors/hand-pointer.png'), pointer;
+}

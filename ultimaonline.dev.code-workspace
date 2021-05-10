@@ -1,23 +1,84 @@
 {
   "folders": [
     {
+      "name": "ultimaonline.dev",
       "path": "."
     }
   ],
   "settings": {
-    "breadcrumbs.enabled": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+    "files.associations": {
+      ".editorconfig": "editorconfig",
+      ".gitconfig": "ini",
+      ".gitignore": "ignore",
+      ".npmrc": "ini"
     },
+    "files.exclude": {
+      // default excludes
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+
+      // custom excludes
+      ".github": false,
+      ".vscode": false,
+      "dist": true,
+      "pages": false,
+      "public": false,
+      "styles": false,
+      "node_modules": true,
+      ".editorconfig": true,
+      ".gitattributes": true,
+      ".gitconfig": true,
+      ".gitignore": false,
+      ".npmrc": true,
+      "package.json": false,
+      "package-lock.json": true,
+      "README.md": false,
+      "ultimaonline.code-workspace": false
+    },
+
+    // language specific extensions
+    "[css]": {
+      "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+    "[json]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "vscode.markdown-language-features",
+    },
+
+    // global editor settings
+    "breadcrumbs.enabled": true,
     "editor.cursorStyle": "line-thin",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+    },
+    "editor.formatOnSave": false,
+    "editor.folding": true,
+    "editor.foldingStrategy": "auto",
+    "editor.lineNumbers": "on",
+    "editor.renderWhitespace": "all",
+    "editor.renderIndentGuides": true,
+    "editor.showUnused": true,
+    "explorer.openEditors.visible": 0,
+    "telemetry.enableCrashReporter": false,
+    "git.fetchOnPull": true,
+    "git.enableCommitSigning": true,
+
+    // search settings
     "search.exclude": {
       "**/dist": true,
       "**/node_modules": true
-    },
-    "telemetry.enableTelemetry": false
+    }
   }
 }

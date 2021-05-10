@@ -1,8 +1,0 @@
-# ultimaonline.dev
-
-dist/
-node_modules/
-
-Dockerfile
-yarn.lock
-package-lock.json

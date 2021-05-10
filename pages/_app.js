@@ -1,10 +1,9 @@
 // ultimaonline.dev
 
-import App, { Container } from 'next/app';
-import React from 'react';
+import App from 'next/app';
 import Helmet from 'react-helmet';
-import '../assets/scss/style.scss';
-import { homepage, name as title } from '../package.json';
+
+import '../styles/style.css';
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -23,7 +22,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
+      <>
         <Helmet
           // base
           // bodyAttributes
@@ -31,7 +30,7 @@ class MyApp extends App {
             {
               rel: 'icon',
               type: 'image/png',
-              href: '/static/favicon.png'
+              href: '/favicon.png'
             }
           ]}
           htmlAttributes={{
@@ -44,7 +43,7 @@ class MyApp extends App {
             },
             {
               property: 'og:title',
-              content: title
+              content: 'ultimaonline.dev'
             },
             {
               property: 'og:type',
@@ -52,21 +51,21 @@ class MyApp extends App {
             },
             {
               property: 'og:image',
-              content: '/static/img/poster.jpg'
+              content: '/img/poster.jpg'
             },
             {
               property: 'og:url',
-              content: homepage
+              content: 'https://ultimaonline.dev/'
             }
           ]}
           // noscript
           // script
           // style
-          title={title}
+          title={'ultimaonline.dev'}
         />
 
         <Component {...pageProps} />
-      </Container>
+      </>
     );
   }
 }

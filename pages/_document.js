@@ -48,6 +48,7 @@ class MyDocument extends Document {
             }}
           />
         </Head>
+
         <body {...this.helmetBodyAttrComponents}>
           <Main />
           <NextScript />
